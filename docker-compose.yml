@@ -28,7 +28,7 @@ services:
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:3.15.2
     ports:
-      - 9000:80
+      - 9003:80
     restart: unless-stopped
 
   db:
@@ -78,7 +78,7 @@ services:
       - "6831:6831/udp"
       - "6832:6832/udp"
       - "5778:5778"
-      - "16686:16686"
+      - "3009:16686"
       - "14268:14268"
       - "9411:9411"
     restart: unless-stopped
